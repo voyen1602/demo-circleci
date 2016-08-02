@@ -21,7 +21,7 @@ database:
     - ./mongodb-linux-x86_64-ubuntu1204-3.2.3/bin/mongod --dbpath ./data/db --logpath ./mongod.log --fork || cat ./mongod.log
 
 test:
-  post:
+  pre:
     - npm start:
         background: true
     - mongod:

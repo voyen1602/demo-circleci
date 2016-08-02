@@ -25,7 +25,7 @@ module.exports = function() {
     browser.click('button');
   });
 
-  this.Then(/^I see "([^"]*)" and "([^"]*)" was input before$/, function (name,quote) {
+  this.Then(/^I see "([^"]*)" and "([^"]*)" were input before$/, function (name,quote) {
     var span = browser.getText('span');
     console.log(span);
     expect(span[span.length-2]).toEqual(name);

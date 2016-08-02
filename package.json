@@ -4,7 +4,7 @@
   "description": "Demo CircleCI in Node js",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/chimp"
+    "test": "sudo ./node_modules/.bin/chimp"
   },
   "repository": {
     "type": "git",

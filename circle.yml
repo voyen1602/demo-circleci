@@ -7,4 +7,5 @@ machine:
 dependencies:
   override:
     - node -v
-    - npm install
+    - sudo npm install
+    - pwd

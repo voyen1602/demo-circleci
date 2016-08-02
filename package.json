@@ -19,7 +19,6 @@
   "dependencies": {
     "chai": "^3.5.0",
     "chimp": "^0.39.3",
-    "cucumber": "^1.2.1",
-    "fibers":"latest"
+    "cucumber": "^1.2.1"
   }
 }

@@ -19,3 +19,10 @@ database:
     - mkdir -p ./data/db
     # Fork MongoDB and log to './mongod.log'. Print the log file if it failed.
     - ./mongodb-linux-x86_64-ubuntu1204-3.2.3/bin/mongod --dbpath ./data/db --logpath ./mongod.log --fork || cat ./mongod.log
+
+test:
+  post:
+    - npm start:
+        background: true
+    - mongod:
+       background: true

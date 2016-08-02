@@ -1,7 +1,7 @@
 module.exports = function() {
 
-  this.Given(/^I have visited Google$/, function () {
-    browser.url('http://google.com');
+  this.Given(/^I have visited Demo page$/, function () {
+    browser.url('http://localhost:3000');
   });
 
   this.When(/^I search for "([^"]*)"$/, function (searchTerm) {
@@ -10,9 +10,26 @@ module.exports = function() {
   });
 
   this.Then(/^I see "([^"]*)"$/, function (searchTerm) {
-    console.log(browser.getText('.rc .r a'));
-    var aResult = browser.getText('.rc .r a');
-    expect(aResult[0]).toEqual(searchTerm);
+    expect(browser.getText('h3')).toEqual(searchTerm);
   });
-  
+
+  this.When(/^I fill name is "([^"]*)"$/, function (name) {
+    browser.setValue('input[name="name"]', name);
+  });
+
+  this.When(/^I fill quote is "([^"]*)"$/, function (quote) {
+    browser.setValue('input[name="quote"]', quote);
+  });
+
+  this.When(/^I submit to save data$/, function () {
+    browser.click('button');
+  });
+
+  this.Then(/^I see "([^"]*)" and "([^"]*)" was input before$/, function (name,quote) {
+    var span = browser.getText('span');
+    console.log(span);
+    expect(span[span.length-2]).toEqual(name);
+    expect(span[span.length-1]).toEqual(quote);
+  });
+
 }

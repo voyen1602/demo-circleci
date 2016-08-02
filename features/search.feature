@@ -1,11 +1,5 @@
-Feature: Search the Web
+Feature: Access to web
 
-  As a human
-  I want to search the web
-  So I can find information
-
-  @watch
-  Scenario: Search for Xolv.io
-    Given I have visited Google
-    When I search for "Xolv.io"
-    
+  Scenario: User can access to demo page
+    Given I have visited Demo page
+    Then I see "May Node and Express be with you."

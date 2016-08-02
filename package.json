@@ -4,7 +4,8 @@
   "description": "Demo CircleCI in Node js",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/chimp --browser=phantomjs --watch"
+    "test": "./node_modules/.bin/chimp --browser=phantomjs --watch",
+    "start": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -17,8 +18,13 @@
   },
   "homepage": "https://github.com/voyen1602/demo-circleci#readme",
   "dependencies": {
+    "body-parser": "^1.15.2",
     "chai": "^3.5.0",
     "chimp": "^0.39.3",
-    "cucumber": "^1.2.1"
+    "cucumber": "^1.2.1",
+    "ejs": "^2.5.1",
+    "express": "^4.14.0",
+    "mongodb": "^2.2.5",
+    "nodemon": "^1.10.0"
   }
 }

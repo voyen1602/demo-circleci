@@ -4,6 +4,5 @@ machine:
 
 dependencies:
   override:
-    - node -v
     - npm install
-    - pwd
+    - npm start

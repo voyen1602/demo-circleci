@@ -1,6 +1,4 @@
 dependencies:
   override:
     - npm install
-    - pwd
-    - npm uninstall fibers
-    - npm install fibers
+    - node -v

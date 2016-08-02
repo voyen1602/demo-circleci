@@ -1,8 +1,6 @@
 machine:
-  timezone:
-    America/Los_Angeles
   node:
-    version: 5.0.0
+    version: 5.2.0
 
 dependencies:
   override:

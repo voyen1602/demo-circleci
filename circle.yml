@@ -4,6 +4,8 @@ machine:
 
 dependencies:
   override:
+    - npm -g install npm
+    - npm -v
     - npm install
 
 #database:

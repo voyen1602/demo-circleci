@@ -6,15 +6,16 @@ dependencies:
   override:
     - npm install
 
-database:
-  pre:
+#database:
+#  pre:
     # Stop MongoDB
-    - sudo service mongodb stop
+#    - sudo service mongodb stop
     # Download MongoDB 3.2.3
-    - curl -Ol https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-ubuntu1204-3.2.3.tgz
-    - tar -zxvf mongodb-linux-x86_64-ubuntu1204-3.2.3.tgz
-    - mkdir -p ./data/db
-    - ./mongodb-linux-x86_64-ubuntu1204-3.2.3/bin/mongod --dbpath ./data/db --logpath ./mongod.log --fork || cat ./mongod.log
+#    - curl -Ol https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-ubuntu1204-3.2.3.tgz
+#    - tar -zxvf mongodb-linux-x86_64-ubuntu1204-3.2.3.tgz
+#    - mkdir -p ./data/db
+#    - ./mongodb-linux-x86_64-ubuntu1204-3.2.3/bin/mongod --dbpath ./data/db --logpath ./mongod.log --fork || cat ./mongod.log
+    #- sudo mongoimport --db newdb --collection restaurants --file primer-dataset.json
 
 test:
   pre:

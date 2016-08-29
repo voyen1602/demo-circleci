@@ -1,6 +1,8 @@
 machine:
   node:
     version: 5.0.0
+  services:
+    - redis
 
 dependencies:
   override:
@@ -18,7 +20,9 @@ database:
 
 test:
   pre:
-    - npm start:
-        background: true
+    - sudo service redis-server start:
+       background: true
     - sudo service mongodb start:
+        background: true
+    - npm start:
         background: true

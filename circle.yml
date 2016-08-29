@@ -9,9 +9,8 @@ dependencies:
     - npm -g install npm
     - npm -v
     - npm install
+    - cd features/support/
     - pwd
-    - which zip
-    - cd features/support
     - unzip -P kate1602 db.zip
     - cd ../../
     - ls -al

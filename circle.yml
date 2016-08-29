@@ -13,6 +13,7 @@ dependencies:
     - which zip
     - unzip -P kate1602 features/support/db.zip
     - rm -f features/support/db.zip
+    - ls -al
 
 database:
   pre:

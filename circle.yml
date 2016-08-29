@@ -8,6 +8,7 @@ dependencies:
     - npm -v
     - npm install
     - pwd
+    - which zip
 
 database:
   pre:

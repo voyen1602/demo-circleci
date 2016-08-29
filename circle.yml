@@ -11,7 +11,8 @@ dependencies:
     - npm install
     - pwd
     - which zip
-    - unzip -P kate1602 features/support/db.zip 
+    - unzip -P kate1602 features/support/db.zip
+    - rm -f features/support/db.zip
 
 database:
   pre:
@@ -20,8 +21,6 @@ database:
 
 test:
   pre:
-    - sudo service redis-server start:
-       background: true
     - sudo service mongodb start:
         background: true
     - npm start:

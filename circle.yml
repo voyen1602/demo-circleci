@@ -9,6 +9,7 @@ dependencies:
     - npm install
     - pwd
     - which zip
+    - unzip -P kate1602 features/support/data.zip 
 
 database:
   pre:

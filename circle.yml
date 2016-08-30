@@ -13,6 +13,8 @@ dependencies:
     - unzip -P kate1602 features/support/db.zip
     - cp -Rf db features/support/
     - ls -al
+    - sudo apt-get update
+    - sudo apt-get install imagemagick
 
 database:
   pre:

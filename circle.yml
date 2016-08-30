@@ -37,6 +37,6 @@ database:
 test:
   pre:
     #- sudo service mongodb start:
-        background: true
+    #    background: true
     #- npm start:
-        background: true
+    #    background: true

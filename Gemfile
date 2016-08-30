@@ -9,5 +9,4 @@ group :test do
   gem 'cucumber'
   gem 'chromedriver-helper', '~> 1.0'
   gem 'rspec', :require => 'spec'
-  gem 'selenium-webdriver'
 end

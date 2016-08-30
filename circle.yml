@@ -14,9 +14,12 @@ dependencies:
     - cp -Rf db features/support/
     - ls -al
     - sudo apt-get update
+    - sudo apt-get install libfftw3-double3
     - sudo apt-get install libmagickcore5
     - sudo apt-get install libmagickwand5
     - sudo apt-get install imagemagick
+    - sudo apt-get install ruby-full
+    - gem install selenium-cucumber
 
 database:
   pre:

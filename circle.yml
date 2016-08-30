@@ -13,14 +13,13 @@ dependencies:
     - unzip -P kate1602 features/support/db.zip
     - cp -Rf db features/support/
     - ls -al
+    - sudo apt-add-repository -y ppa:brightbox/ruby-ng
     - sudo apt-get update
     - sudo apt-get install libfftw3-double3
     - sudo apt-get install libmagickcore5
     - sudo apt-get install libmagickwand5
     - sudo apt-get install imagemagick
-    - sudo apt-add-repository ppa:brightbox/ruby-ng
-    - sudo apt-get update
-    - sudo apt-get install ruby2.2 ruby2.2-dev
+    - sudo apt-get install -y ruby2.2 ruby2.2-dev
     - ruby -v
     - gem install selenium-cucumber
 

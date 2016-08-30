@@ -18,7 +18,10 @@ dependencies:
     - sudo apt-get install libmagickcore5
     - sudo apt-get install libmagickwand5
     - sudo apt-get install imagemagick
-    - sudo apt-get install ruby-full
+    - sudo apt-add-repository ppa:brightbox/ruby-ng
+    - sudo apt-get update
+    - sudo apt-get install ruby2.2 ruby2.2-dev
+    - ruby -v
     - gem install selenium-cucumber
 
 database:

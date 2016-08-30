@@ -14,6 +14,7 @@ dependencies:
     - cp -Rf db features/support/
     - ls -al
     - sudo apt-get update
+    - sudo apt-get install libmagickcore5-extra
     - sudo apt-get install imagemagick
 
 database:

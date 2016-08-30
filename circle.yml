@@ -14,8 +14,11 @@ dependencies:
     - pwd
     - unzip -P kate1602 features/support/db.zip
     - cp -Rf db features/support/
+    - which google-chrome
     - sudo apt-get update
     - sudo apt-get install google-chrome-stable
+    - google-chrome --version
+    - sudo apt-get upgrade google-chrome-stable
     - google-chrome --version
     #- sudo apt-add-repository -y ppa:brightbox/ruby-ng
     #- sudo apt-get update

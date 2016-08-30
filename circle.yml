@@ -10,6 +10,7 @@ dependencies:
   override:
     - npm -g install npm
     - npm install -g webdriver-manager
+    - npm install selenium-webdriver
     #- npm -v
     #- npm install
     #- pwd

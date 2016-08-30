@@ -2,7 +2,7 @@ machine:
   node:
     version: 5.0.0
   ruby:
-    version: 2.3
+    version: rbx-2.2.6
   services:
     - redis
 

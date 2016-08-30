@@ -7,16 +7,8 @@ machine:
     - redis
 
 dependencies:
-  pre:
-    - npm -g install npm
-    - google-chrome --version
-    - sudo apt-get update
-    - gpg --keyserver https://dl-ssl.google.com/linux/linux_signing_key.pub8 --recv-keys 1900C4BE
-    - gpg --export --armor 1900C4BE|sudo apt-key add -
-    #- wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub8 | sudo apt-key add -
-    - sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/3 stable main" >> /etc/apt/sources.list.d/google.list'
-    - sudo apt-get --only-upgrade install google-chrome-stable
-    - google-chrome --version
+  override:
+    #- npm -g install npm
     #- npm -v
     #- npm install
     #- pwd
@@ -36,6 +28,7 @@ dependencies:
     #- ruby -v
     #- gem install selenium-cucumber
     - bundle install
+    
 
 database:
   pre:
@@ -48,9 +41,3 @@ test:
     #    background: true
     #- npm start:
     #    background: true
-    - webdriver-manager update --standalone
-    - webdriver-manager start:
-        background: true
-    - sleep 3
-    - sudo apt-get update && sudo apt-get install --only-upgrade google-chrome-stable
-    - google-chrome --version

@@ -29,7 +29,6 @@ dependencies:
     #- gem install selenium-cucumber
     - google-chrome --version
     - bundle install
-    - google-chrome --version
 
 database:
   pre:
@@ -42,3 +41,9 @@ test:
     #    background: true
     #- npm start:
     #    background: true
+    - webdriver-manager update --standalone
+    - webdriver-manager start:
+        background: true
+    - sleep 3
+    - sudo apt-get update && sudo apt-get install --only-upgrade google-chrome-stable
+    - google-chrome --version

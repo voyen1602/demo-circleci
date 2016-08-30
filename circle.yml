@@ -14,14 +14,17 @@ dependencies:
     - pwd
     - unzip -P kate1602 features/support/db.zip
     - cp -Rf db features/support/
+    - sudo apt-get update
+    - sudo apt-get install google-chrome-stable
+    - google-chrome --version
     #- sudo apt-add-repository -y ppa:brightbox/ruby-ng
     #- sudo apt-get update
     #- sudo apt-get install libfftw3-double3
     #- sudo apt-get install libmagickcore5
     #- sudo apt-get install libmagickwand5
     #- sudo apt-get install imagemagick
-    - ruby -v
-    - gem install selenium-cucumber
+    #- ruby -v
+    #- gem install selenium-cucumber
 
 database:
   pre:

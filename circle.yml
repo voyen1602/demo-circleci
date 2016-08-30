@@ -8,17 +8,17 @@ machine:
 
 dependencies:
   override:
-    - npm -g install npm
-    - npm -v
-    - npm install
-    - pwd
-    - unzip -P kate1602 features/support/db.zip
-    - cp -Rf db features/support/
-    - which google-chrome
-    - google-chrome --version
-    - sudo apt-get update
-    - sudo apt-get install --only-upgrade google-chrome-stable
-    - google-chrome --version
+    #- npm -g install npm
+    #- npm -v
+    #- npm install
+    #- pwd
+    #- unzip -P kate1602 features/support/db.zip
+    #- cp -Rf db features/support/
+    #- which google-chrome
+    #- google-chrome --version
+    #- sudo apt-get update
+    #- sudo apt-get install --only-upgrade google-chrome-stable
+    #- google-chrome --version
     #- sudo apt-add-repository -y ppa:brightbox/ruby-ng
     #- sudo apt-get update
     #- sudo apt-get install libfftw3-double3
@@ -27,15 +27,16 @@ dependencies:
     #- sudo apt-get install imagemagick
     #- ruby -v
     #- gem install selenium-cucumber
+    - bundle install
 
 database:
   pre:
     # Import DB
-    - mongorestore --host 127.0.0.1 --port 27017 features/support/db
+    #- mongorestore --host 127.0.0.1 --port 27017 features/support/db
 
 test:
   pre:
-    - sudo service mongodb start:
+    #- sudo service mongodb start:
         background: true
-    - npm start:
+    #- npm start:
         background: true

@@ -4,7 +4,7 @@
   "description": "Demo CircleCI in Node js",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/chimp --browser=phantomjs",
+    "test": "cucumber",
     "start": "nodemon server.js"
   },
   "repository": {

@@ -15,10 +15,10 @@ dependencies:
     #- unzip -P kate1602 features/support/db.zip
     #- cp -Rf db features/support/
     #- which google-chrome
-    #- google-chrome --version
-    #- sudo apt-get update
-    #- sudo apt-get install --only-upgrade google-chrome-stable
-    #- google-chrome --version
+    - google-chrome --version
+    - sudo apt-get update
+    - sudo apt-get update google-chrome-stable
+    - google-chrome --version
     #- sudo apt-add-repository -y ppa:brightbox/ruby-ng
     #- sudo apt-get update
     #- sudo apt-get install libfftw3-double3

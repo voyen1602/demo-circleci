@@ -17,7 +17,7 @@ dependencies:
     #- which google-chrome
     - google-chrome --version
     - sudo apt-get update
-    - sudo apt-get update google-chrome-stable
+    - sudo apt-get upgrade google-chrome-stable
     - google-chrome --version
     #- sudo apt-add-repository -y ppa:brightbox/ruby-ng
     #- sudo apt-get update
